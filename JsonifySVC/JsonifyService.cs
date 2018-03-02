@@ -33,7 +33,8 @@ namespace JsonifySVC
                     .WithIdentity("JsonJob", "Group1")
                     .Build();
 
-                // Trigger the job to run now,  every 10 seconds starting at 10:15 AM.
+                // Trigger the job to run now,  every 10 seconds starting at 1418hrs.
+				//uses 24hrs system
                 ITrigger trigger = TriggerBuilder.Create()
                   .WithIdentity("JsonJobTrigger", "Group1")
                  .WithDailyTimeIntervalSchedule
